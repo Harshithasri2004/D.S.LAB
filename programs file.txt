@@ -1,0 +1,52 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,data,a[i];
+    printf("\n Enter number of elements of an array:\n");
+    scanf("%d",&n);
+    printf("\nEnter elements :\n");
+  for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    printf ("Enter data to search:");
+    scanf("%d",&data);
+    for(i=0;i<n;i++)
+    if(a[i]==data)
+    {
+        printf("\n item found at %d");
+        break;
+    }
+    if(i==n)
+    printf("\n item doesnot exist");
+    return 0;
+    }
+
+
+#include<stdio.h>
+int main()
+{
+    int a[3][3],b[3][3],c[3][3],i,j;
+    printf("Enter the elements of matrix  1");
+    for(i=0;i<3;i++)
+    for(j=0;j<3;j++)
+    {
+        scanf("%d",&a[i][j]);
+        }
+        printf("Enter the elements of matrix 2:");
+        for(i=0;i<3;i++)
+        for(j=0;j<3;j++)
+        {
+            scanf(" %d",b[i][j]);
+        }
+        for(i=0;i<3;i++)
+        for(j=0;j<3;j++)
+        {
+            c[i][j]=a[i][j]+b[i][j];
+       }
+       for(i=0;i<3;i++)
+       for(j=0;j<3;j++)
+       {
+           printf("%d",c[i][j]);
+           printf("\n");
+       }
+       return 0;
+}
