@@ -1,7 +1,9 @@
+//Code for Bubble Sort Algorithm
 #include<stdio.h>
 int main()
 {
     int arr[20],size,i,j,temp;
+    // Start for input an array
     printf("Enter the size of array");
     scanf("%d",&size);
     printf("Enter the elements of the array,,,,,");
@@ -10,7 +12,15 @@ int main()
         printf("\n Enter the %d element",i+1);
         scanf("%d", &arr[i]);
     }
+    // End for input
+    // Code for Bubble sort
+    
+       
+    
     if(i=0,i<size)
+    
+    // End for Bubble sort
+    // COde for Output array
     printf("/n sorted array is,,,,,,");
     for(i=0;i<size;i++)
     printf("%d",arr[i]);
